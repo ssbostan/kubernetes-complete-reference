@@ -15,6 +15,10 @@ Copyright 2021 Saeid Bostandoust <ssbostan@linuxmail.org>
 
 Kubernetes - aka K8s - is a container orchestration engine for automating deployment, scaling, and management of containerized applications. With Kubernetes, a set of container engines (Docker, Containerd, CRI-O, etc.) that were deployed on various servers (both physical and virtual) can be brought together to manage complex container-based software environments. The set of these servers is called the Kubernetes Cluster. So to speak, the Kubernetes cluster is a set of nodes that can run containers which they managed centrally with an amazing tool called Kubernetes. Kubernetes is a leading container orchestration engine in the current container ecosystem.
 
+## Why we need Kubernetes?
+
+In software environments that use containers, usually microservices, we have many concerns such as storage and network needs, dynamic configuration per run environments, load balancing, application scaling, high availability, etc. Kubernetes is the answer to these concerns. With the Kubernetes platform, all things such as that described above are managed automatically by this great platform. Before Kubernetes, these concerns were solved manually or automatically in scattered tools. With Kubernetes, all of them are done on just one platform.
+
 # Table of Content:
 
 Kubernetes topics are categorized into these top headers. It may change in the future.
