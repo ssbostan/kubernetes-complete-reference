@@ -1,6 +1,11 @@
 # kubernetes-complete-reference
 
 ![Visits Badge](https://badges.pufler.dev/visits/ssbostan/kubernetes-complete-reference)
+![GitHub last commit](https://img.shields.io/github/last-commit/ssbostan/kubernetes-complete-reference)
+[![GitHub license](https://img.shields.io/github/license/ssbostan/kubernetes-complete-reference)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ssbostan/kubernetes-complete-reference)](https://github.com/ssbostan/kubernetes-complete-reference/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ssbostan/kubernetes-complete-reference)](https://github.com/ssbostan/kubernetes-complete-reference/network)
+[![GitHub issues](https://img.shields.io/github/issues/ssbostan/kubernetes-complete-reference)](https://github.com/ssbostan/kubernetes-complete-reference/issues)
 
 The most complete reference for the **Kubernetes** container orchestration engine.
 
