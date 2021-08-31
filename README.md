@@ -19,7 +19,7 @@ Kubernetes - aka K8s - is a container orchestration engine for automating deploy
 
 In software environments that use containers, usually microservices, we have many concerns such as storage and network needs, dynamic configuration per run environments, load balancing, application scaling, high availability, etc. Kubernetes is the answer to these concerns. With the Kubernetes platform, all things such as that described above are managed automatically by this great platform. Before Kubernetes, these concerns were solved manually or automatically in scattered tools. With Kubernetes, all of them are done on just one platform.
 
-# Table of Content:
+# Table of Contents:
 
 Kubernetes topics are categorized into these top headers. It may change in the future.
 
