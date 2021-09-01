@@ -4,7 +4,7 @@ Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Contr
 
 ## <a name="data-plane">Data plane:</a>
 
-**Etcd** is a distributed key-value store that is used as a Kubernetes database to store Kubernetes data. You should note that the meaning of data does not files! We are talking about the cluster configuration, resources, manifests, etc. Because of the nature of distributed systems, we need to run Etcd in a clustered way. So to speak, An etcd cluster needs a majority of nodes, a quorum, to agree on updates to the cluster state. For a cluster with n members, a quorum is (n/2)+1. For any odd-sized cluster, adding one node will always increase the number of nodes necessary for a quorum. All cluster data are stored in the Etcd database.
+**Etcd** is a distributed key-value store that is used as a Kubernetes database to store Kubernetes data. You should note that the meaning of data does not files! We are talking about the cluster configuration, resources, manifests, etc. Because of the nature of distributed systems, we need to run Etcd in a clustered way. So to speak, An etcd cluster needs a majority of nodes, a quorum, to agree on updates to the cluster state. For a cluster with n members, a quorum is (n/2)+1. For any odd-sized cluster, adding one node will always increase the number of nodes necessary for a quorum. All cluster data are stored in the Etcd database. You should have a proper backup solution for it.
 
 > Minimum viable clusters must have at least three Etcd nodes.
 
@@ -36,7 +36,7 @@ To be completed.
 
 ## <a name="worker-nodes">Worker nodes:</a>
 
-Workers that were formerly called Minions are one of the most important parts of the Kubernetes cluster. They are responsible for running containers. Kubernetes supports various container runtimes and can work with multiple runtimes at the same time. Each cluster should have at least one worker node.
+Worker nodes that were formerly called Minions are one of the most important parts of the Kubernetes cluster. They are responsible for running containers. Kubernetes supports various container runtimes and can work with multiple container runtimes at the same time. Each cluster should have at least one worker node to run application containers.
 
 > For high availability scenarios, at least three worker nodes are recommended.
 
