@@ -24,18 +24,18 @@ In software environments that use containers, usually microservices, we have man
 Kubernetes topics are categorized into these top headers. It may change in the future.
 
  1. **Kubernetes Concepts**
-    - [**Kubernetes Architecture**](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md)
-      - [Data plane](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#data-plane)
-        - [Etcd cluster](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#data-plane)
-      - [Control plane](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#control-plane)
-        - [kube-apiserver](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#kube-apiserver)
-        - [kube-controller-manager](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#kube-controller-manager)
-        - [kube-scheduler](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#kube-scheduler)
-        - [cloud-controller-manager](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#cloud-controller-manager)
-      - [Worker nodes](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#worker-nodes)
-        - [kubelet](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#kubelet)
-        - [kube-proxy](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#kube-proxy)
-        - [Container Runtime](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture.md#container-runtime)
+    - [**Kubernetes Architecture**](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md)
+      - [Data plane](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#data-plane)
+        - [Etcd cluster](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#data-plane)
+      - [Control plane](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#control-plane)
+        - [kube-apiserver](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-apiserver)
+        - [kube-controller-manager](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-controller-manager)
+        - [kube-scheduler](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-scheduler)
+        - [cloud-controller-manager](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#cloud-controller-manager)
+      - [Worker nodes](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#worker-nodes)
+        - [kubelet](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kubelet)
+        - [kube-proxy](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-proxy)
+        - [Container Runtime](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#container-runtime)
  2. **Kubernetes Cheatsheets**
  3. **Kubernetes Best Practices**
  4. **Kubernetes Tools**
