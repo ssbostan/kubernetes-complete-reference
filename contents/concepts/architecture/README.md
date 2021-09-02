@@ -26,7 +26,9 @@ The API server is the main component of the Kubernetes control plane that expose
 
 ### <a name="kube-controller-manager">kube-controller-manager:</a>
 
-To be completed.
+This component is responsible for managing Kubernetes resources. Almost every Kubernetes resource has a controller. For example, checking resource state, controlling the application desired state and replicas, applications high availability, checking nodes and applications liveness are some functions and responsibilities of this component. Although each controller is run in a separate process but to reduce complexity, they are all compiled into a single binary and run in a single process. The high availability of Kube-controller-manager is done by leader election. In simple words, leader election is a mechanism that guarantees only one instance of service is responsible for making decisions. While all other instances are inactive, but they are ready to hold a new election and announcing a new leader when something happens to the current leader. All instances except the leader are locked and cannot make any decision.
+
+> For high availability, run at least two instances of Kube-controller-manager on different servers.
 
 ### <a name="kube-scheduler">kube-scheduler:</a>
 
