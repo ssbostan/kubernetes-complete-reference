@@ -20,7 +20,9 @@ The Kubernetes control plane that was formerly called Master is the brain of Kub
 
 ### <a name="kube-apiserver">kube-apiserver:</a>
 
-To be completed.
+The API server is the main component of the Kubernetes control plane that exposes the Kubernetes API to clients. All clients (other components and users) are connected to Kube-apiserver to do their works. The API server is the only component that is connected directly to the data plane, Etcd. All data operations should be done through the API server, and this component is responsible for responding to client requests. The API server is a stateless service that can be run in a highly available fashion. Just run several instances and balance traffic between them.
+
+> For high availability, run at least two instances of Kube-apiserver on different servers.
 
 ### <a name="kube-controller-manager">kube-controller-manager:</a>
 
