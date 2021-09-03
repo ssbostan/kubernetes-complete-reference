@@ -50,7 +50,7 @@ Worker nodes that were formerly called Minions are one of the most important par
 
 ### <a name="kubelet">kubelet:</a>
 
-The kubelet is a most sensitive component in the Kubernetes ecosystem that is responsible for running containers managed by the Kubernetes. This component from one side connects to the Kubernetes API server and from the other side connects to the Container Runtime. It takes Kubernetes PodSpec and ensures that the containers are described in those PodSpec are running and healthy. All other containers that are not created by the Kubernetes are not managed with the kubelet. The kubelet speaks to Container Runtimes through the CRI, Container Runtime Interface. The CRI is a plugin that enabled kubelet to use a wide variety of container runtimes without the need to recompile.
+The kubelet is a most sensitive component in the Kubernetes ecosystem that is responsible for running containers managed by the Kubernetes. This component from one side connects to the Kubernetes API server and from the other side connects to the Container Runtime. It takes Kubernetes PodSpec and ensures that the containers are described in those PodSpec are running and healthy. All other containers that are not created by the Kubernetes are not managed with the kubelet. The kubelet speaks to Container Runtimes through the CRI, Container Runtime Interface. The CRI is a plugin that enables kubelet to use a wide variety of container runtimes without the need to recompile.
 
 ### <a name="kube-proxy">kube-proxy:</a>
 
