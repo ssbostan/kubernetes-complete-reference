@@ -32,11 +32,15 @@ This component is responsible for managing Kubernetes resources. Almost every Ku
 
 ### <a name="kube-scheduler">kube-scheduler:</a>
 
-To be completed.
+Where Kubernetes pods should be running is the major responsibility of this component. The scheduler is responsible for selecting eligible nodes to run newly created pods. When a new pod is created by a user or a controller, no nodes are assigned for running that pod, and the scheduler must assign a proper node to run that. Many factors like resource requirements, policy constraints, affinity, and anti-affinity are taken into account for scheduling decisions. In the case of high-availability deployment, this component is just like Kube-controller-manager, and more than one instance can not be active at the same time.
+
+> For high availability, run at least two instances of Kube-scheduler on different servers.
 
 ### <a name="cloud-controller-manager">cloud-controller-manager:</a>
 
-To be completed.
+This component is a cloud-specific unit that runs where Kubernetes is deployed on the cloud services. The Cloud-controller-manager connects the Kubernetes cluster to the cloud provider API to achieve cloud functionalities. You should note that this component only runs controllers that are specific to your cloud provider. If Kubernetes is deployed on on-premises servers, no instances of this component are run. Each controller is a separate process, but they are all compiled into a single binary and running as a single process to reduce complexity.
+
+> For high availability, run at least two instances of Cloud-controller-manager on different servers.
 
 ## <a name="worker-nodes">Worker nodes:</a>
 
