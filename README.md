@@ -36,6 +36,17 @@ Kubernetes topics are categorized into these top headers. It may change in the f
         - [kubelet](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kubelet)
         - [kube-proxy](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-proxy)
         - [Container Runtime](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#container-runtime)
+    - **Kubernetes Manifests**
+      - Manifest Metadata (ObjectMeta)
+    - **Kubernetes Workloads**
+      - Pod
+      - ReplicationController
+      - ReplicaSet
+      - Deployment
+      - DaemonSet
+      - StatefulSet
+      - Job
+      - CronJob
  2. **Kubernetes Cheatsheets**
  3. **Kubernetes Best Practices**
  4. **Kubernetes Tools**
