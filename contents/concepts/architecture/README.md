@@ -2,6 +2,10 @@
 
 Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Control plane**, and **Workers**. The data plane, **Etcd**, is responsible for store Kubernetes data like configurations, manifests, resources, etc. The control plane that runs various components is responsible for managing the whole cluster as well as the worker nodes. Worker nodes are responsible for running and managing containers.
 
+<p align="center">
+  <img alt="Kubernetes Architecture" src="https://raw.githubusercontent.com/ssbostan/kubernetes-complete-reference/master/assets/contents/concepts/architecture/architecture.png">
+</p>
+
 ## <a name="data-plane">Data plane:</a>
 
 **Etcd** is a distributed key-value store that is used as a Kubernetes database to store Kubernetes data. You should note that the meaning of data does not files! We are talking about the cluster configuration, resources, manifests, etc. Because of the nature of distributed systems, we need to run Etcd in a clustered way. So to speak, An etcd cluster needs a majority of nodes, a quorum, to agree on updates to the cluster state. For a cluster with n members, a quorum is (n/2)+1. For any odd-sized cluster, adding one node will always increase the number of nodes necessary for a quorum. All cluster data are stored in the Etcd database. You should have a proper backup solution for it.
