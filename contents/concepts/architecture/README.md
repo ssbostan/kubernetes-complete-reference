@@ -54,9 +54,8 @@ The kubelet is a most sensitive component in the Kubernetes ecosystem that is re
 
 ### <a name="kube-proxy">kube-proxy:</a>
 
-To be completed.
+This component is a network proxy that implementing part of the Kubernetes Service concept. Network rules on each node are managed by the Kube-proxy. These network rules allow communication with pods from inside or outside of the cluster. If the node operating system has a packet filtering layer, like Netfilter, it uses that layer. Otherwise, All traffic is routed through the Kube-proxy, and the Kube-proxy is directly responsible for managing and forwarding them to proper destinations.
 
 ### <a name="container-runtime">Container Runtime:</a>
 
-To be completed.
-
+The Container Runtime is the software that is responsible for running containers. Running the container is not really the function of the Kubernetes - It's a Container Orchestration Engine - and it has not implemented the Container Runtime for itself. Instead, it uses the existing Container Runtimes like Docker, Containerd, CRI-O, etc. A variety of container runtimes can be used by Kubernetes through the Kubelet CRI plugin. Because of the CRI plugin, Kubernetes can use multiple Container Runtimes at the same time.
