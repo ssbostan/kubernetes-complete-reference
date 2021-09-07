@@ -39,7 +39,7 @@ Kubernetes topics are categorized into these top headers. It may change in the f
     - **Kubernetes Manifests**
       - Manifest Metadata (ObjectMeta)
     - **Kubernetes Workloads**
-      - Pod
+      - [Pods](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/workloads/pods.md)
       - ReplicationController
       - ReplicaSet
       - Deployment
