@@ -8,6 +8,15 @@ Stopping and starting a pod causes the system to reschedule a new pod. Because o
 
 Because Pods do not have any self-healing mechanism, we rarely create them directly. Instead, we use Controllers like Deployment, ReplicaSet, DaemonSet, etc., that they create and manage Pods for us. These controllers provide various mechanisms like self-healing, high availability, upgrading, etc. For example, when a node that hosts the pod is failed, the controller tells the system to reschedule a new instance of the pod to run on a healthy node. See more information at Workloads topics.
 
+<p align="center">
+  <img alt="Kubernetes Pods" src="https://raw.githubusercontent.com/ssbostan/kubernetes-complete-reference/master/assets/contents/concepts/workloads/pods.png">
+</p>
+
+ - **Pod 1**: This is a one-container-per-pod model. In most cases, we use this model.
+ - **Pod 2**: In this Pod, two containers are running, and the network and lifecycle of them are shared together.
+ - **Pod 3**: In this Pod, two containers are running, and the network, storage, and lifecycle of them are shared together.
+ - **Pod 4**: This example is like the previous one but on a larger scale.
+
 # Example
 
 Here is a brief example of Pod manifest:
