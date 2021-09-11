@@ -52,9 +52,57 @@ Kubernetes topics are categorized into these top headers. It may change in the f
         - StatefulSet
         - Job
         - CronJob
+      - **Service Discovery and Load Balancing**
+        - Service
+        - Endpoints
+        - EndpointSlice
+        - Ingress
+      - **Config and Storage Resources**
+        - ConfigMap
+        - Secret
+        - PersistentVolume
+        - PersistentVolumeClaim
+        - StorageClass
+      - **High-Availability and Scaling Resources**
+        - PodDisruptionBudget
+        - HorizontalPodAutoscaler
+        - VerticalPodAutoscaler
+      - **Authentication and Authorization**
+        - Role
+        - ClusterRole
+        - RoleBinding
+        - ClusterRoleBinding
+        - ServiceAccount
+      - **Security and Quota Management Resources**
+        - NetworkPolicy
+        - PodSecurityPolicy
+        - CertificateSigningRequest
+        - ResourceQuota
+        - LimitRange
+      - **Kubernetes Cluster Resources**
+        - Namespace
+        - Node
  2. **Kubernetes Cheatsheets**
+    - Kubernetes YAML Manifests (All-in-one)
+    - Kubernetes kubeadm CLI
+    - Kubernetes kubectl CLI
  3. **Kubernetes Best Practices**
  4. **Kubernetes Tools**
+    - **Installation Tools**
+      - minikube
+      - kind
+      - k3s
+      - k3d
+      - microk8s
+      - kubeadm
+      - kubespray
+      - kops
+      - RKE (Rancher Kubernetes Engine)
+      - Charmed Kubernetes
+      - KubeSphere
+      - KubeKey
+      - Kubermatic
+      - KubeOne
  5. **Kubernetes Examples**
 
 # How to contribute:
