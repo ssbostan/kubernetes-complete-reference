@@ -7,9 +7,13 @@
 [![GitHub forks](https://img.shields.io/github/forks/ssbostan/kubernetes-complete-reference)](https://github.com/ssbostan/kubernetes-complete-reference/network)
 [![GitHub issues](https://img.shields.io/github/issues/ssbostan/kubernetes-complete-reference)](https://github.com/ssbostan/kubernetes-complete-reference/issues)
 
-The most complete reference for the **Kubernetes** container orchestration engine.
+<p align="center">
+ <img alt="Kubernetes Logo" src="https://kubernetes.io/images/kubernetes-horizontal-color.png">
+</p>
 
-Copyright 2021 Saeid Bostandoust <ssbostan@linuxmail.org>
+<p align="center">The most complete reference for the <strong>Kubernetes</strong> container orchestration engine.</p>
+
+<p align="center">Created by <a href="https://github.com/ssbostan">ssbostan</a> and contributors.</p>
 
 # What is Kubernetes?
 
@@ -57,3 +61,5 @@ Kubernetes topics are categorized into these top headers. It may change in the f
 All contributions are welcomed. Contributors are introduced on the main page of this repository.
 
 Contribution rules will explain as soon as possible.
+
+Copyright 2021 Saeid Bostandoust <ssbostan@linuxmail.org>
