@@ -84,7 +84,6 @@ Kubernetes topics are categorized into these top headers. It may change in the f
         - Node
  2. **Kubernetes Cheatsheets**
     - Kubernetes YAML Manifests (All-in-one)
-    - Kubernetes kubeadm CLI
     - Kubernetes kubectl CLI
  3. **Kubernetes Best Practices**
  4. **Kubernetes Tools**
