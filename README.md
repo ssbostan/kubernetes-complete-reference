@@ -83,8 +83,8 @@ Kubernetes topics are categorized into these top headers. It may change in the f
         - Namespace
         - Node
  2. **Kubernetes Cheatsheets**
-    - Kubernetes YAML Manifests (All-in-one)
     - Kubernetes kubectl CLI
+    - Kubernetes YAML Manifests (All-in-one)
  3. **Kubernetes Best Practices**
  4. **Kubernetes Tools**
     - **Installation Tools**
@@ -106,8 +106,8 @@ Kubernetes topics are categorized into these top headers. It may change in the f
 
 # How to contribute:
 
-All contributions are welcomed. Contributors are introduced on the main page of this repository.
+All contributions are welcomed. [See Contribution Guide](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/CONTRIBUTING.md)
 
-Contribution rules will explain as soon as possible.
+Everyone interested in the Kubernetes can contribute to this reference.
 
-Copyright 2021 Saeid Bostandoust <ssbostan@linuxmail.org>
+Saeid Bostandoust <ssbostan@linuxmail.org>
