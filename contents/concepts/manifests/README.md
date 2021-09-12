@@ -7,3 +7,9 @@ Kubernetes manifests are specifications of the Kubernetes objects that are repre
 </p>
 
 Each object has three main fields, **apiVersion**, **kind**, **metadata**. Most of them, especially all workloads, have **spec** and **status** fields.
+
+ - **apiVersion**: Points to the API version that exists in your Kubernetes cluster and has the desired resource.
+ - **kind**: Specifies the wanted Kubernetes resource that exists in the selected API version.
+ - **metadata**: An instance of the ObjectMeta dictionary that contains the object specifications.
+ - **spec**: It contains the actual specifications of the object. Each Kubernetes resource has its own spec.
+ - **status**: The current status of the object. This field is read-only, and the Kubernetes core can only update that.
