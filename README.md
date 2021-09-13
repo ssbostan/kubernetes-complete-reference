@@ -40,8 +40,8 @@ Kubernetes topics are categorized into these top headers. It may change in the f
         - [kubelet](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kubelet)
         - [kube-proxy](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-proxy)
         - [Container Runtime](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#container-runtime)
-    - **Kubernetes Manifests**
-      - Manifest Metadata (ObjectMeta)
+    - [**Kubernetes Manifests**](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/manifests/README.md)
+      - [Manifest Metadata (ObjectMeta)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/manifests/README.md#objectmeta)
     - **Kubernetes Resources**
       - **Kubernetes Workloads**
         - [Pods](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/resources/workloads/pods.md)
