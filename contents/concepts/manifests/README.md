@@ -14,7 +14,7 @@ Each object has three main fields, **apiVersion**, **kind**, **metadata**. Most 
  - **spec**: It contains the actual specifications of the object. Each Kubernetes resource has its own spec.
  - **status**: The current status of the object. This field is read-only, and the Kubernetes core can only update that.
 
-# <a name="object-meta">ObjectMeta metadata</a>
+# <a name="objectmeta">ObjectMeta metadata</a>
 
 Each Kubernetes object that is related to a persisted resource must have ObjectMeta metadata. It consists of all metadata that is related to the entire object. For example, the object **uid**, **name**, **labels**, **annotations**, **namespace**, etc. You should note that the ObjectMeta that is specified in the **metadata** field of the manifest is a mandatory field, and it should be written for every object.
 
