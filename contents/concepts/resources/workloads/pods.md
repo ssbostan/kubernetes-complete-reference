@@ -13,9 +13,10 @@ Because Pods do not have any self-healing mechanism, we rarely create them direc
 </p>
 
  - **Pod 1**: This is a one-container-per-pod model. In most cases, we use this model.
- - **Pod 2**: In this Pod, two containers are running, and the network and lifecycle of them are shared together.
- - **Pod 3**: In this Pod, two containers are running, and the network, storage, and lifecycle of them are shared together.
- - **Pod 4**: This example is like the previous one but on a larger scale.
+ - **Pod 2**: This is a one-container-per-pod model in conjunction with a storage volume.
+ - **Pod 3**: In this Pod, two containers are running, and the network and lifecycle of them are shared together.
+ - **Pod 4**: In this Pod, two containers are running, and the network, storage, and lifecycle of them are shared together.
+ - **Pod 5**: This example is like the previous one but on a larger scale.
 
 # Example
 
