@@ -45,7 +45,7 @@ Kubernetes topics are categorized into these top headers. It may change in the f
     - **Kubernetes Resources**
       - **Kubernetes Workloads**
         - [Pods](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/resources/workloads/pods.md)
-        - ReplicationController
+        - [ReplicationController](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/resources/workloads/replicationcontroller.md)
         - ReplicaSet
         - Deployment
         - DaemonSet
@@ -106,7 +106,7 @@ Kubernetes topics are categorized into these top headers. It may change in the f
 
 # How to contribute:
 
-All contributions are welcomed. [See Contribution Guide](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/CONTRIBUTING.md)
+All contributions are welcomed. [CONTRIBUTING.md](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/CONTRIBUTING.md)
 
 Everyone interested in the Kubernetes can contribute to this reference.
 
