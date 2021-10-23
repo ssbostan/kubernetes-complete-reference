@@ -25,7 +25,7 @@ In software environments that use containers, usually microservices, we have man
 
 # Table of Contents:
 
-Kubernetes topics are categorized into these top headers. It may change in the future.
+Kubernetes topics are categorized into these top headers. It may change in future.
 
  1. **Kubernetes Concepts**
     - [**Kubernetes Architecture**](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md)
@@ -86,7 +86,11 @@ Kubernetes topics are categorized into these top headers. It may change in the f
     - [Kubernetes kubectl CLI](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/cheatsheets/kubectl.md)
     - [Kubernetes YAML Manifests (All-in-one)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/cheatsheets/manifests.md)
  3. **Kubernetes Best Practices**
- 4. **Kubernetes Tools**
+ 4. **Kubernetes Tutorials**
+    - **External Resources**
+      - [Kubernetes Installation Methods The Complete Guide](https://itnext.io/kubernetes-installation-methods-the-complete-guide-1036c860a2b3)
+      - [Kubernetes Storage — Part 1 — NFS complete tutorial](https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77)
+ 5. **Kubernetes Tools**
     - **Installation Tools**
       - [Kubeadm (Official Installation Tool)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/tools/installation/kubeadm.md)
       - [minikube (Local Kubernetes cluster)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/tools/installation/minikube.md)
@@ -102,7 +106,7 @@ Kubernetes topics are categorized into these top headers. It may change in the f
       - [KubeKey (KubeSphere Installer)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/tools/installation/kubekey.md)
       - [Kubermatic (Central Kubernetes Management Platform)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/tools/installation/kubermatic.md)
       - [KubeOne (Kubermatic Installer)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/tools/installation/kubeone.md)
- 5. **Kubernetes Examples**
+ 6. **Kubernetes Examples**
 
 # How to contribute:
 
