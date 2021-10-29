@@ -11,7 +11,7 @@
  <img alt="Kubernetes Logo" src="https://kubernetes.io/images/kubernetes-horizontal-color.png">
 </p>
 
-<p align="center">The most complete reference for the <strong>Kubernetes</strong> container orchestration engine.</p>
+<p align="center">The completest reference for the <strong>Kubernetes</strong> container orchestration engine.</p>
 
 <p align="center">Created by <a href="https://github.com/ssbostan">ssbostan</a> and contributors.</p>
 
