@@ -90,6 +90,7 @@ Kubernetes topics are categorized into these top headers. It may change in futur
     - **External Resources**
       - [Kubernetes Installation Methods The Complete Guide](https://itnext.io/kubernetes-installation-methods-the-complete-guide-1036c860a2b3)
       - [Kubernetes Storage — Part 1 — NFS complete tutorial](https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77)
+      - [Kubernetes Storage — Part 2 — GlusterFS complete tutorial](https://itnext.io/kubernetes-storage-part-2-glusterfs-complete-tutorial-77542c12a602)
  5. **Kubernetes Tools**
     - **Installation Tools**
       - [Kubeadm (Official Installation Tool)](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/tools/installation/kubeadm.md)
