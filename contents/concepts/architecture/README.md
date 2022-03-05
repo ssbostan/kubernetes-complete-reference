@@ -1,6 +1,6 @@
 # Kubernetes Architecture
 
-Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Control plane**, and **Workers**. The data plane, **Etcd**, is responsible for store Kubernetes data like configurations, manifests, resources, etc. The control plane that runs various components is responsible for managing the whole cluster as well as the worker nodes. Worker nodes are responsible for running and managing containers.
+Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Control plane**, and **Workers**. The data plane, **Etcd**, is responsible for storing Kubernetes data like configurations, manifests, resources, etc. The control plane that runs various components is responsible for managing the whole cluster as well as the worker nodes. Worker nodes are responsible for running and managing containers.
 
 <p align="center">
   <img alt="Kubernetes Architecture" src="https://raw.githubusercontent.com/ssbostan/kubernetes-complete-reference/master/assets/contents/concepts/architecture/architecture.png">
@@ -8,7 +8,7 @@ Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Contr
 
 ## <a name="data-plane">Data plane:</a>
 
-**Etcd** is a distributed key-value store that is used as a Kubernetes database to store Kubernetes data. You should note that the meaning of data does not files! We are talking about the cluster configuration, resources, manifests, etc. Because of the nature of distributed systems, we need to run Etcd in a clustered way. So to speak, An etcd cluster needs a majority of nodes, a quorum, to agree on updates to the cluster state. For a cluster with n members, a quorum is (n/2)+1. For any odd-sized cluster, adding one node will always increase the number of nodes necessary for a quorum. All cluster data are stored in the Etcd database. You should have a proper backup solution for it.
+**Etcd** is a distributed key-value store that is used as Kubernetes database to store Kubernetes data. You should note that the meaning of data is not files! We are talking about the cluster configuration, resources, manifests, etc. Due to the nature of distributed systems, we need to run Etcd in a clustered way. So to speak, An etcd cluster needs a majority of nodes, a quorum, to agree on updates to the cluster state. For a cluster with n members, a quorum is (n/2)+1. For any odd-sized cluster, adding one node will always increase the number of nodes necessary for a quorum. All cluster data is stored in the Etcd database. You should have a proper backup solution for it.
 
 > Minimum viable clusters must have at least three Etcd nodes.
 
@@ -16,7 +16,7 @@ Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Contr
 
 ## <a name="control-plane">Control plane:</a>
 
-The Kubernetes control plane that was formerly called Master is the brain of Kubernetes that manages the whole cluster and worker nodes. A couple of components that each one has a specific function are run in the control plane nodes. These components are described below.
+The Kubernetes control plane that was formerly called Master is the brain of Kubernetes and manages the whole cluster and worker nodes. A couple of components that each one has a specific function are run in the control plane nodes. These components are described below.
 
 > For high availability, at least two control plane nodes must exist in the cluster.
 
@@ -36,13 +36,13 @@ This component is responsible for managing Kubernetes resources. Almost every Ku
 
 ### <a name="kube-scheduler">kube-scheduler:</a>
 
-Where Kubernetes pods should be running is the major responsibility of this component. The scheduler is responsible for selecting eligible nodes to run newly created pods. When a new pod is created by a user or a controller, no nodes are assigned for running that pod, and the scheduler must assign a proper node to run that. Many factors like resource requirements, policy constraints, affinity, and anti-affinity are taken into account for scheduling decisions. In the case of high-availability deployment, this component is just like Kube-controller-manager, and more than one instance can not be active at the same time.
+Deciding where Kubernetes pods should be running is the major responsibility of this component. The scheduler is responsible for selecting eligible nodes to run newly created pods. When creating a new pod is requested by a user or a controller and no nodes are assigned for running that pod, the scheduler must assign a proper node to run that. Many factors like resource requirements, policy constraints, affinity, and anti-affinity are taken into account for scheduling decisions. In the case of high-availability deployment, this component is just like Kube-controller-manager, and more than one instance can not be active at the same time.
 
 > For high availability, run at least two instances of Kube-scheduler on different servers.
 
 ### <a name="cloud-controller-manager">cloud-controller-manager:</a>
 
-This component is a cloud-specific unit that runs where Kubernetes is deployed on the cloud services. The Cloud-controller-manager connects the Kubernetes cluster to the cloud provider API to achieve cloud functionalities. You should note that this component only runs controllers that are specific to your cloud provider. If Kubernetes is deployed on on-premises servers, no instances of this component are run. Each controller is a separate process, but they are all compiled into a single binary and running as a single process to reduce complexity.
+This component is a cloud-specific unit that runs where Kubernetes is deployed on the cloud services. The Cloud-controller-manager connects the Kubernetes cluster to the cloud provider API to achieve cloud functionalities. You should note that this component only runs controllers that are specific to your cloud provider. If Kubernetes is deployed on on-premises servers, no instances of this component are run. Each controller is a separate process, but they are all compiled into a single binary and are running as a single process to reduce complexity.
 
 > For high availability, run at least two instances of Cloud-controller-manager on different servers.
 
@@ -54,12 +54,12 @@ Worker nodes that were formerly called Minions are one of the most important par
 
 ### <a name="kubelet">kubelet:</a>
 
-The kubelet is a most sensitive component in the Kubernetes ecosystem that is responsible for running containers managed by the Kubernetes. This component from one side connects to the Kubernetes API server and from the other side connects to the Container Runtime. It takes Kubernetes PodSpec and ensures that the containers are described in those PodSpec are running and healthy. All other containers that are not created by the Kubernetes are not managed with the kubelet. The kubelet speaks to Container Runtimes through the CRI, Container Runtime Interface. The CRI is a plugin that enables kubelet to use a wide variety of container runtimes without the need to recompile.
+The kubelet is a most sensitive component in the Kubernetes ecosystem that is responsible for running containers managed by Kubernetes. This component from one side connects to the Kubernetes API server and from the other side connects to the Container Runtime. It takes Kubernetes PodSpecs and ensures that the containers described in those PodSpecs are running and healthy. All other containers that are not created by the Kubernetes are not managed with the kubelet. The kubelet speaks to Container Runtimes through the CRI, Container Runtime Interface. The CRI is a plugin that enables kubelet to use a wide variety of container runtimes without the need to recompile.
 
 ### <a name="kube-proxy">kube-proxy:</a>
 
-This component is a network proxy that implementing part of the Kubernetes Service concept. Network rules on each node are managed by the Kube-proxy. These network rules allow communication with pods from inside or outside of the cluster. If the node operating system has a packet filtering layer, like Netfilter, it uses that layer. Otherwise, All traffic is routed through the Kube-proxy, and the Kube-proxy is directly responsible for managing and forwarding them to proper destinations.
+This component is a network proxy that implements part of the Kubernetes Service concept. Network rules on each node are managed by the Kube-proxy. These network rules allow communication with pods from inside or outside of the cluster. If the node operating system has a packet filtering layer, like Netfilter, it uses that layer. Otherwise, All traffic is routed through the Kube-proxy, and the Kube-proxy is directly responsible for managing and forwarding them to proper destinations.
 
 ### <a name="container-runtime">Container Runtime:</a>
 
-The Container Runtime is the software that is responsible for running containers. Running the container is not really the function of the Kubernetes - It's a Container Orchestration Engine - and it has not implemented the Container Runtime for itself. Instead, it uses the existing Container Runtimes like Docker, Containerd, CRI-O, etc. A variety of container runtimes can be used by Kubernetes through the Kubelet CRI plugin. Because of the CRI plugin, Kubernetes can use multiple Container Runtimes at the same time.
+The Container Runtime is the software that is responsible for running containers. Running containers is not really the function of the Kubernetes - It's a Container Orchestration Engine - and it has not implemented the Container Runtime for itself. Instead, it uses the existing Container Runtimes like Docker, Containerd, CRI-O, etc. A variety of container runtimes can be used by Kubernetes through the Kubelet CRI plugin. Using the CRI plugin, Kubernetes can work with multiple Container Runtimes at the same time.
