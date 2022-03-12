@@ -3,7 +3,7 @@
 Each **Kubernetes cluster** is divided into three parts, **Data plane**, **Control plane**, and **Workers**. The data plane, **Etcd**, is responsible for storing Kubernetes data like configurations, manifests, resources, etc. The control plane that runs various components is responsible for managing the whole cluster as well as the worker nodes. Worker nodes are responsible for running and managing containers.
 
 <p align="center">
-  <img alt="Kubernetes Architecture" src="https://raw.githubusercontent.com/ssbostan/kubernetes-complete-reference/master/assets/contents/concepts/architecture/architecture.png">
+  <img alt="Kubernetes Architecture" src="/assets/contents/concepts/architecture/architecture.png">
 </p>
 
 ## <a name="data-plane">Data plane:</a>
