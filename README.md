@@ -29,7 +29,7 @@ Kubernetes topics are categorized into these top headers. It may change in futur
 
  1. **Kubernetes Concepts**
     - [**Kubernetes Architecture**](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md)
-      - [Data plane](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#data-plane)
+      - [Data plane](contents/concepts/architecture#data-plane)
         - [Etcd cluster](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#data-plane)
       - [Control plane](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#control-plane)
         - [kube-apiserver](https://github.com/ssbostan/kubernetes-complete-reference/blob/master/contents/concepts/architecture/README.md#kube-apiserver)
