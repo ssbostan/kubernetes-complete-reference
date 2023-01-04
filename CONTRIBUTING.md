@@ -6,11 +6,11 @@ If you intend to contribute to the Kubernetes Complete Reference, this guideline
 
 Contribution in this Kubernetes reference is not limited to special people of special knowledge. **EVERYONE** can contribute to this repository, and all contributions are welcomed. For clarifying how to contribute to this reference, we divide contribution topics into the following ones. Please note that contributions are not just limited to these topics. You are free to update this guideline too.
 
- - Contributors who are interested in develop the reference, topics that are currently added to the **Table of Contents** section.
+ - Contributors who are interested in developing the reference, topics that are currently added to the **Table of Contents** section.
  - Developers and maintainers of the tools that are related to the Kubernetes ecosystem. Add your product guideline.
- - Who one interested in Kubernetes, by suggestion to add new items in the reference, feel free to file an issue.
- - Those ones have read the reference and found bugs, by fixing the bugs or file an issue.
- - Who one that has a blog, news channel, group, community, etc., by introducing the reference to others
+ - one who is interested in Kubernetes, by suggestion to add new items in the reference, feel free to file an issue.
+ - Those ones who have read the reference and found bugs, by fixing the bugs or filing an issue.
+ - one who has a blog, news channel, group, community, etc., by introducing the reference to others.
 
 ### Copyright agreements:
 
